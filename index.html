@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generator QR Code</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/jquery.qrcode.js"></script>
+    <script type="text/javascript" src="./js/qrcode.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">QR CODE Generator</div>
+      <div class="content">
+        <div class="title">
+          <img
+            src="./img/logo-cong-an-png-innhanmac.png"
+            alt="logo_cong_an_nhan_dan"
+          />
+        </div>
+
+        <label for="">Nhập đường dẫn muốn tạo QR Code</label>
+
+        <input type="text" name="url" id="txtUrl" />
+
+        <div class="container-button">
+          <button class="btn-gen" id="btnGen">Tạo QR CODE</button>
+        </div>
+
+        <!--Vùng hiển thị QR Code-->
+        <div class="container-qr-code">
+            <div class="qr-code" id="qrCode"></div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="author">Tác giả: Trần Ngọc Hoàng</div>
+        <div class="phone">Số điện thoại: 0123456789</div>
+      </div>
+    </div>
+  </body>
+</html>

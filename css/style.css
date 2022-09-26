@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto Mono';
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: max-content;
+  border: 2px solid green;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.container .header {
+  height: 10%;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.container .content {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+.container .content .title {
+  display: flex;
+  justify-content: center;
+}
+
+.container .content .title img {
+  width: 250px;
+}
+
+.container .content label {
+  margin-bottom: 15px;
+}
+
+.container .content #txtUrl {
+  height: 38px;
+  width: auto;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 18px;
+  outline: none;
+}
+
+.container .content #txtUrl:focus {
+  border-color: #47AC00;
+}
+
+.container .content .container-button {
+  display: flex;
+  justify-content: center;
+  height: 38px;
+}
+
+.container .content .container-button .btn-gen {
+  width: max-content;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #47AC00;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.container .content .container-button .btn-gen:active {
+  opacity: 0.85;
+}
+
+.container .content .container-qr-code {
+  display: flex;
+  justify-content: center;
+}
+
+.container .content .container-qr-code .qr-code {
+  width: 256px;
+  height: 256px;
+  margin: 20px 0;
+}
+
+.container .footer {
+  height: 10%;
+}
